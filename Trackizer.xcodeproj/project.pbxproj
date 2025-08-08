@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF3C668C2E4618C800E54555 /* PrimaryButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3C668B2E4618C800E54555 /* PrimaryButtonView.swift */; };
+		DF3C668E2E461A0300E54555 /* SecondaryButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3C668D2E461A0300E54555 /* SecondaryButtonView.swift */; };
 		DF8CC2F02E3CDE08007CD33B /* TrackizerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8CC2EF2E3CDE08007CD33B /* TrackizerApp.swift */; };
 		DF8CC2F42E3CDE09007CD33B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF8CC2F32E3CDE09007CD33B /* Assets.xcassets */; };
 		DF8CC2F72E3CDE09007CD33B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF8CC2F62E3CDE09007CD33B /* Preview Assets.xcassets */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DF3C668B2E4618C800E54555 /* PrimaryButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonView.swift; sourceTree = "<group>"; };
+		DF3C668D2E461A0300E54555 /* SecondaryButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButtonView.swift; sourceTree = "<group>"; };
 		DF8CC2EC2E3CDE08007CD33B /* Trackizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trackizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF8CC2EF2E3CDE08007CD33B /* TrackizerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackizerApp.swift; sourceTree = "<group>"; };
 		DF8CC2F32E3CDE09007CD33B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -130,6 +134,8 @@
 			isa = PBXGroup;
 			children = (
 				DFC739E42E45F64F00871273 /* UIExtensions.swift */,
+				DF3C668B2E4618C800E54555 /* PrimaryButtonView.swift */,
+				DF3C668D2E461A0300E54555 /* SecondaryButtonView.swift */,
 			);
 			path = UICommon;
 			sourceTree = "<group>";
@@ -231,6 +237,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFC739E52E45F64F00871273 /* UIExtensions.swift in Sources */,
+				DF3C668C2E4618C800E54555 /* PrimaryButtonView.swift in Sources */,
+				DF3C668E2E461A0300E54555 /* SecondaryButtonView.swift in Sources */,
 				DF8CC2F02E3CDE08007CD33B /* TrackizerApp.swift in Sources */,
 				DFC739E72E45F70F00871273 /* WelcomeView.swift in Sources */,
 			);

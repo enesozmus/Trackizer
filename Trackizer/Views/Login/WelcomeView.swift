@@ -30,8 +30,19 @@ struct WelcomeView: View {
                     .padding(.horizontal, 20)
                     .foregroundStyle(.white)
                     .padding(.bottom, 30)
+                
+                PrimaryButtonView(title: "Get Started", onPressed: {
+                    //
+                })
+                .padding(.bottom, 15)
+                
+                SecondaryButtonView(title: "I have an account", onPressed: {
+                    //
+                })
+                .padding(.bottom, .bottomInsets)
             }
         }
+        .navigationTitle("")
         .ignoresSafeArea()
     }
 }
