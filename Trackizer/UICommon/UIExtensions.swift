@@ -15,7 +15,7 @@ enum Inter: String {
 }
 
 extension Font {
-    static func customfont(_ font: Inter, fontSize: CGFloat) -> Font {
+    static func customFont(_ font: Inter, fontSize: CGFloat) -> Font {
         custom(font.rawValue, size: fontSize)
     }
 }

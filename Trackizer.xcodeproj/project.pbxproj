@@ -8,17 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		DF8CC2F02E3CDE08007CD33B /* TrackizerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8CC2EF2E3CDE08007CD33B /* TrackizerApp.swift */; };
-		DF8CC2F22E3CDE08007CD33B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8CC2F12E3CDE08007CD33B /* ContentView.swift */; };
 		DF8CC2F42E3CDE09007CD33B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF8CC2F32E3CDE09007CD33B /* Assets.xcassets */; };
 		DF8CC2F72E3CDE09007CD33B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF8CC2F62E3CDE09007CD33B /* Preview Assets.xcassets */; };
+		DF8CC30A2E3CE083007CD33B /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF8CC3062E3CE083007CD33B /* Inter-Medium.ttf */; };
+		DF8CC30B2E3CE083007CD33B /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF8CC3072E3CE083007CD33B /* Inter-Bold.ttf */; };
+		DF8CC30C2E3CE083007CD33B /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF8CC3082E3CE083007CD33B /* Inter-SemiBold.ttf */; };
+		DF8CC30D2E3CE083007CD33B /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF8CC3092E3CE083007CD33B /* Inter-Regular.ttf */; };
+		DFC739E52E45F64F00871273 /* UIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC739E42E45F64F00871273 /* UIExtensions.swift */; };
+		DFC739E72E45F70F00871273 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC739E62E45F70F00871273 /* WelcomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DF8CC2EC2E3CDE08007CD33B /* Trackizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trackizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF8CC2EF2E3CDE08007CD33B /* TrackizerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackizerApp.swift; sourceTree = "<group>"; };
-		DF8CC2F12E3CDE08007CD33B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DF8CC2F32E3CDE09007CD33B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF8CC2F62E3CDE09007CD33B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DF8CC3062E3CE083007CD33B /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
+		DF8CC3072E3CE083007CD33B /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
+		DF8CC3082E3CE083007CD33B /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		DF8CC3092E3CE083007CD33B /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		DF8CC30E2E3CE09E007CD33B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DFC739E42E45F64F00871273 /* UIExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIExtensions.swift; sourceTree = "<group>"; };
+		DFC739E62E45F70F00871273 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +62,14 @@
 		DF8CC2EE2E3CDE08007CD33B /* Trackizer */ = {
 			isa = PBXGroup;
 			children = (
+				DF8CC30E2E3CE09E007CD33B /* Info.plist */,
+				DF8CC3022E3CDE6B007CD33B /* UICommon */,
+				DF8CC3012E3CDE62007CD33B /* Common */,
+				DF8CC3002E3CDE5B007CD33B /* Models */,
+				DF8CC2FF2E3CDE51007CD33B /* ViewModels */,
+				DF8CC2FE2E3CDE48007CD33B /* Views */,
+				DF8CC2FD2E3CDE3E007CD33B /* Fonts */,
 				DF8CC2EF2E3CDE08007CD33B /* TrackizerApp.swift */,
-				DF8CC2F12E3CDE08007CD33B /* ContentView.swift */,
 				DF8CC2F32E3CDE09007CD33B /* Assets.xcassets */,
 				DF8CC2F52E3CDE09007CD33B /* Preview Content */,
 			);
@@ -65,6 +82,78 @@
 				DF8CC2F62E3CDE09007CD33B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DF8CC2FD2E3CDE3E007CD33B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				DF8CC3072E3CE083007CD33B /* Inter-Bold.ttf */,
+				DF8CC3062E3CE083007CD33B /* Inter-Medium.ttf */,
+				DF8CC3092E3CE083007CD33B /* Inter-Regular.ttf */,
+				DF8CC3082E3CE083007CD33B /* Inter-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		DF8CC2FE2E3CDE48007CD33B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DF8CC3052E3CDE95007CD33B /* MainTab */,
+				DF8CC3042E3CDE8C007CD33B /* Home */,
+				DF8CC3032E3CDE7D007CD33B /* Login */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DF8CC2FF2E3CDE51007CD33B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DF8CC3002E3CDE5B007CD33B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DF8CC3012E3CDE62007CD33B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		DF8CC3022E3CDE6B007CD33B /* UICommon */ = {
+			isa = PBXGroup;
+			children = (
+				DFC739E42E45F64F00871273 /* UIExtensions.swift */,
+			);
+			path = UICommon;
+			sourceTree = "<group>";
+		};
+		DF8CC3032E3CDE7D007CD33B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				DFC739E62E45F70F00871273 /* WelcomeView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		DF8CC3042E3CDE8C007CD33B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		DF8CC3052E3CDE95007CD33B /* MainTab */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MainTab;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +216,10 @@
 			files = (
 				DF8CC2F72E3CDE09007CD33B /* Preview Assets.xcassets in Resources */,
 				DF8CC2F42E3CDE09007CD33B /* Assets.xcassets in Resources */,
+				DF8CC30B2E3CE083007CD33B /* Inter-Bold.ttf in Resources */,
+				DF8CC30C2E3CE083007CD33B /* Inter-SemiBold.ttf in Resources */,
+				DF8CC30D2E3CE083007CD33B /* Inter-Regular.ttf in Resources */,
+				DF8CC30A2E3CE083007CD33B /* Inter-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +230,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF8CC2F22E3CDE08007CD33B /* ContentView.swift in Sources */,
+				DFC739E52E45F64F00871273 /* UIExtensions.swift in Sources */,
 				DF8CC2F02E3CDE08007CD33B /* TrackizerApp.swift in Sources */,
+				DFC739E72E45F70F00871273 /* WelcomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +368,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Trackizer/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Trackizer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -302,6 +397,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Trackizer/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Trackizer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
