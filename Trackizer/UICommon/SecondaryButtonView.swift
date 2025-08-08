@@ -20,8 +20,8 @@ struct SecondaryButtonView: View {
                     .resizable()
                     .scaledToFill()
                     .padding(.horizontal, 20)
-                    .frame(width: .infinity, height: 48)
-                
+                    .frame(width: .screenWidth, height: 48)
+                        
                 Text(title)
                     .font(.customFont(.semibold, fontSize: 14))
                     .padding(.horizontal, 20)
