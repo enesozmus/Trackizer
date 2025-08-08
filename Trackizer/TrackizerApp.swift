@@ -11,7 +11,9 @@ import SwiftUI
 struct TrackizerApp: App {
     var body: some Scene {
         WindowGroup {
-            WelcomeView()
+            NavigationStack {
+                WelcomeView()
+            }
         }
     }
 }

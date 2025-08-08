@@ -75,9 +75,12 @@ struct SignUpView: View {
                     .padding(.bottom, 20)
                 
                 SecondaryButtonView(title: "Sign In", onPressed: {
-                    //
+                    showSignIn.toggle()
                 })
                 .padding(.bottom, .bottomInsets + 8)
+                .navigationDestination(isPresented: $showSignIn) {
+                    SignInView()
+                }
             }
         }
         .navigationTitle("")

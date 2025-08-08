@@ -83,6 +83,9 @@ struct SignInView: View {
                     showSignUp.toggle()
                 })
                 .padding(.bottom, .bottomInsets + 8)
+                .navigationDestination(isPresented: $showSignUp) {
+                    SignUpView()
+                }
             }
         }
         .navigationTitle("")

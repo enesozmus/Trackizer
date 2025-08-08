@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct WelcomeView: View {
+    @State private var showSignIn: Bool = false
+    @State private var showSignUp: Bool = false
+    
     var body: some View {
         ZStack {
             Image("welcome_screen")
@@ -32,14 +35,20 @@ struct WelcomeView: View {
                     .padding(.bottom, 30)
                 
                 PrimaryButtonView(title: "Get Started", onPressed: {
-                    //
+                    showSignUp.toggle()
                 })
                 .padding(.bottom, 15)
+                .navigationDestination(isPresented: $showSignUp) {
+                    SocialSignUpView()
+                }
                 
                 SecondaryButtonView(title: "I have an account", onPressed: {
-                    //
+                    showSignIn.toggle()
                 })
                 .padding(.bottom, .bottomInsets)
+                .navigationDestination(isPresented: $showSignIn) {
+                    SignInView()
+                }
             }
         }
         .navigationTitle("")

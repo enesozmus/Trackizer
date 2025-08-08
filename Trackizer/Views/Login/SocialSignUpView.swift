@@ -109,10 +109,13 @@ struct SocialSignUpView: View {
                     .foregroundStyle(.white)
                     .padding(.bottom, 25)
                 
-                SecondaryButtonView(title: "Sign up with e-mail", onPressed: {
-                    //
+                SecondaryButtonView(title: "Sign up with E-mail", onPressed: {
+                    showSignUp.toggle()
                 })
                 .padding(.bottom, 20)
+                .navigationDestination(isPresented: $showSignUp, destination: {
+                    SignUpView()
+                })
                 
                 Text("By registering, you agree to our Terms of Use. Learn how we collect, use and share your data.")
                     .multilineTextAlignment(.center)
