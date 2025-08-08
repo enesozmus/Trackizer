@@ -20,6 +20,8 @@
 		DFC739E52E45F64F00871273 /* UIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC739E42E45F64F00871273 /* UIExtensions.swift */; };
 		DFC739E72E45F70F00871273 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC739E62E45F70F00871273 /* WelcomeView.swift */; };
 		DFE61D0F2E463EB000162F24 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE61D0E2E463EB000162F24 /* SignUpView.swift */; };
+		DFE61D112E46414F00162F24 /* RoundTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE61D102E46414F00162F24 /* RoundTextFieldView.swift */; };
+		DFE61D132E46447A00162F24 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE61D122E46447A00162F24 /* SignInView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		DFC739E42E45F64F00871273 /* UIExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIExtensions.swift; sourceTree = "<group>"; };
 		DFC739E62E45F70F00871273 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		DFE61D0E2E463EB000162F24 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		DFE61D102E46414F00162F24 /* RoundTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundTextFieldView.swift; sourceTree = "<group>"; };
+		DFE61D122E46447A00162F24 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +144,7 @@
 				DFC739E42E45F64F00871273 /* UIExtensions.swift */,
 				DF3C668B2E4618C800E54555 /* PrimaryButtonView.swift */,
 				DF3C668D2E461A0300E54555 /* SecondaryButtonView.swift */,
+				DFE61D102E46414F00162F24 /* RoundTextFieldView.swift */,
 			);
 			path = UICommon;
 			sourceTree = "<group>";
@@ -150,6 +155,7 @@
 				DFC739E62E45F70F00871273 /* WelcomeView.swift */,
 				DF3C668F2E46202B00E54555 /* SocialSignUpView.swift */,
 				DFE61D0E2E463EB000162F24 /* SignUpView.swift */,
+				DFE61D122E46447A00162F24 /* SignInView.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -242,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFE61D132E46447A00162F24 /* SignInView.swift in Sources */,
 				DFC739E52E45F64F00871273 /* UIExtensions.swift in Sources */,
 				DF3C66902E46202B00E54555 /* SocialSignUpView.swift in Sources */,
 				DF3C668C2E4618C800E54555 /* PrimaryButtonView.swift in Sources */,
@@ -249,6 +256,7 @@
 				DF3C668E2E461A0300E54555 /* SecondaryButtonView.swift in Sources */,
 				DF8CC2F02E3CDE08007CD33B /* TrackizerApp.swift in Sources */,
 				DFC739E72E45F70F00871273 /* WelcomeView.swift in Sources */,
+				DFE61D112E46414F00162F24 /* RoundTextFieldView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

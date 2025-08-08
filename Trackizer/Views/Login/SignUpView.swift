@@ -24,6 +24,14 @@ struct SignUpView: View {
                 
                 Spacer()
                 
+                RoundTextFieldView(title: "E-mail Address", text: $txtEmail, keyboardType: .emailAddress)
+                    .padding(.horizontal, 20)
+                    .padding(.bottom, 15)
+                
+                RoundTextFieldView(title: "Passowrd", text: $txtPassword, isPassword: true)
+                    .padding(.horizontal, 20)
+                    .padding(.bottom, 20)
+                
                 HStack {
                     Rectangle()
                         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 5, maxHeight: 5)
