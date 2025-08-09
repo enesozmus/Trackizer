@@ -9,6 +9,27 @@ import SwiftUI
 
 struct HomeView: View {
     @State private var isSubscription = true
+    @State var subscriptionArr: [SubscriptionModel] = [
+        SubscriptionModel(dict: [
+            "name":"Spotify",
+            "icon":"spotify_logo",
+            "price": "5.99"] )
+        ,
+        SubscriptionModel(dict: [
+            "name": "YouTube Premium",
+            "icon": "youtube_logo",
+            "price": "18.99"] )
+        ,
+        SubscriptionModel(dict: [
+            "name": "Microsoft OneDrive",
+            "icon": "onedrive_logo",
+            "price": "29.99"] )
+        ,
+        SubscriptionModel(dict: [
+            "name": "NetFlix",
+            "icon": "netflix_logo",
+            "price": "15.00"] )
+    ]
     
     var body: some View {
         ScrollView {
@@ -39,6 +60,30 @@ struct HomeView: View {
             .background(Color.black)
             .clipShape(RoundedRectangle(cornerRadius: 15))
             .padding()
+            
+            if(isSubscription) {
+                LazyVStack(spacing: 15) {
+                    ForEach(subscriptionArr, id: \.id) { sObj in
+                        //SubScriptionHomeRow(sObj: sObj)
+                        HStack{
+                            Image(sObj.icon)
+                                .resizable()
+                                .frame(width: 40, height: 40)
+                            
+                            Text(sObj.name)
+                                .font(.customFont(.semibold, fontSize: 14))
+                                .foregroundStyle(.white)
+                            
+                            Spacer()
+                            
+                            Text("$\(sObj.price)")
+                                .font(.customFont(.semibold, fontSize: 14))
+                                .foregroundStyle(.white)
+                        }
+                    }
+                }
+                .padding(.horizontal, 20)
+            }
         }
     }
 }
