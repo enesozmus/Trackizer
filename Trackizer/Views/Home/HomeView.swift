@@ -42,7 +42,67 @@ struct HomeView: View {
                 Image("home_bg")
                     .resizable()
                     .scaledToFit()
+                
+                ZStack{
+                    ArcShape()
+                        .foregroundStyle(.gray.opacity(0.2))
+                    
+                    ArcShape(start: 0, end: 230)
+                        .foregroundStyle(Color.secondaryC)
+                        .shadow(color: .secondaryC.opacity(0.5), radius: 7)
+                }
+                .frame(width: .widthPer(per: 0.72), height: .widthPer(per: 0.72) )
+                .padding(.bottom, 18)
+                
+                VStack(spacing: .widthPer(per: 0.07)){
+                    Image("app_logo")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: .widthPer(per: 0.25) )
+                    
+                    Text("$1,235")
+                        .font(.customFont(.bold, fontSize: 40))
+                        .foregroundStyle(.white)
+                    
+                    Text("This month bills")
+                        .font(.customFont(.semibold, fontSize: 12))
+                        .foregroundStyle(Color.gray40)
+                    
+                    Button {
+                        //
+                    } label: {
+                        Text("See your budget")
+                            .font(.customFont(.semibold, fontSize: 12))
+                    }
+                    .foregroundStyle( .white )
+                    .padding(10)
+                    .background(Color.gray60.opacity(0.2))
+                    .overlay {
+                        RoundedRectangle(cornerRadius: 16)
+                            .stroke(Color.gray70, lineWidth: 1)
+                    }
+                    .clipShape(RoundedRectangle(cornerRadius: 16))
+                }
+                
+                VStack{
+                    
+                    Spacer()
+                    
+                    HStack{
+                        StatusButtonView(title: "Active subs", value: "12") {
+                            
+                        }
+                        
+                        StatusButtonView(title: "highest subs", value: "$19.99",color: .primary10) {
+                        }
+                        
+                        StatusButtonView(title: "Lowest subs", value: "$5.99",color: .secondaryG) {
+                        }
+                    }
+                }
+                .padding()
             }
+            .frame(width: .screenWidth, height: .widthPer(per: 1.1) )
             
             HStack {
                 
@@ -64,27 +124,23 @@ struct HomeView: View {
             if(isSubscription) {
                 LazyVStack(spacing: 15) {
                     ForEach(subscriptionArr, id: \.id) { sObj in
-                        //SubScriptionHomeRow(sObj: sObj)
-                        HStack{
-                            Image(sObj.icon)
-                                .resizable()
-                                .frame(width: 40, height: 40)
-                            
-                            Text(sObj.name)
-                                .font(.customFont(.semibold, fontSize: 14))
-                                .foregroundStyle(.white)
-                            
-                            Spacer()
-                            
-                            Text("$\(sObj.price)")
-                                .font(.customFont(.semibold, fontSize: 14))
-                                .foregroundStyle(.white)
-                        }
+                        SubScriptionHomeRowView(sObj: sObj)
+                    }
+                }
+                .padding(.horizontal, 20)
+            }
+            
+            if(!isSubscription) {
+                LazyVStack(spacing: 15) {
+                    ForEach(subscriptionArr, id: \.id) { sObj in
+                        UpcomingBillRowView(sObj: sObj)
                     }
                 }
                 .padding(.horizontal, 20)
             }
         }
+        .background(Color.grayC)
+        .ignoresSafeArea()
     }
 }
 

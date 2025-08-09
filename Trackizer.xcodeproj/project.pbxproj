@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		DF11EBC72E47463700A692B4 /* SubscriptionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF11EBC62E47463700A692B4 /* SubscriptionModel.swift */; };
+		DF11EBCC2E47538C00A692B4 /* SubScriptionHomeRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF11EBCB2E47538C00A692B4 /* SubScriptionHomeRowView.swift */; };
+		DF11EBCE2E4754F000A692B4 /* UpcomingBillRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF11EBCD2E4754F000A692B4 /* UpcomingBillRowView.swift */; };
+		DF11EBD02E47574600A692B4 /* StatusButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF11EBCF2E47574600A692B4 /* StatusButtonView.swift */; };
+		DF11EBD22E47591700A692B4 /* ArcShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF11EBD12E47591700A692B4 /* ArcShapeView.swift */; };
 		DF3C668C2E4618C800E54555 /* PrimaryButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3C668B2E4618C800E54555 /* PrimaryButtonView.swift */; };
 		DF3C668E2E461A0300E54555 /* SecondaryButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3C668D2E461A0300E54555 /* SecondaryButtonView.swift */; };
 		DF3C66902E46202B00E54555 /* SocialSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3C668F2E46202B00E54555 /* SocialSignUpView.swift */; };
@@ -30,6 +34,10 @@
 
 /* Begin PBXFileReference section */
 		DF11EBC62E47463700A692B4 /* SubscriptionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionModel.swift; sourceTree = "<group>"; };
+		DF11EBCB2E47538C00A692B4 /* SubScriptionHomeRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubScriptionHomeRowView.swift; sourceTree = "<group>"; };
+		DF11EBCD2E4754F000A692B4 /* UpcomingBillRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingBillRowView.swift; sourceTree = "<group>"; };
+		DF11EBCF2E47574600A692B4 /* StatusButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusButtonView.swift; sourceTree = "<group>"; };
+		DF11EBD12E47591700A692B4 /* ArcShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcShapeView.swift; sourceTree = "<group>"; };
 		DF3C668B2E4618C800E54555 /* PrimaryButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonView.swift; sourceTree = "<group>"; };
 		DF3C668D2E461A0300E54555 /* SecondaryButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButtonView.swift; sourceTree = "<group>"; };
 		DF3C668F2E46202B00E54555 /* SocialSignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialSignUpView.swift; sourceTree = "<group>"; };
@@ -155,6 +163,10 @@
 				DF3C668D2E461A0300E54555 /* SecondaryButtonView.swift */,
 				DFE61D102E46414F00162F24 /* RoundTextFieldView.swift */,
 				DFB176512E4672C700467241 /* SegmentButtonView.swift */,
+				DF11EBCB2E47538C00A692B4 /* SubScriptionHomeRowView.swift */,
+				DF11EBCD2E4754F000A692B4 /* UpcomingBillRowView.swift */,
+				DF11EBCF2E47574600A692B4 /* StatusButtonView.swift */,
+				DF11EBD12E47591700A692B4 /* ArcShapeView.swift */,
 			);
 			path = UICommon;
 			sourceTree = "<group>";
@@ -261,8 +273,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFE61D132E46447A00162F24 /* SignInView.swift in Sources */,
+				DF11EBCE2E4754F000A692B4 /* UpcomingBillRowView.swift in Sources */,
 				DFC739E52E45F64F00871273 /* UIExtensions.swift in Sources */,
+				DF11EBD22E47591700A692B4 /* ArcShapeView.swift in Sources */,
 				DF3C66902E46202B00E54555 /* SocialSignUpView.swift in Sources */,
+				DF11EBCC2E47538C00A692B4 /* SubScriptionHomeRowView.swift in Sources */,
 				DF3C668C2E4618C800E54555 /* PrimaryButtonView.swift in Sources */,
 				DFB176522E4672C700467241 /* SegmentButtonView.swift in Sources */,
 				DFE61D0F2E463EB000162F24 /* SignUpView.swift in Sources */,
@@ -270,6 +285,7 @@
 				DF3C668E2E461A0300E54555 /* SecondaryButtonView.swift in Sources */,
 				DF8CC2F02E3CDE08007CD33B /* TrackizerApp.swift in Sources */,
 				DFC739E72E45F70F00871273 /* WelcomeView.swift in Sources */,
+				DF11EBD02E47574600A692B4 /* StatusButtonView.swift in Sources */,
 				DFE61D112E46414F00162F24 /* RoundTextFieldView.swift in Sources */,
 				DFB1764E2E46695600467241 /* MainTabView.swift in Sources */,
 				DF11EBC72E47463700A692B4 /* SubscriptionModel.swift in Sources */,
